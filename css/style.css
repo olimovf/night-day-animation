@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.block {
+    margin: 50px auto;
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    background: aqua;
+    animation: fon 20s linear infinite;
+}
+.tog {
+    z-index: 3;
+    position: absolute;
+    background: blue;
+    animation: tog 20s linear infinite;
+}
+.tog:nth-child(1) {
+    width: 200px;
+    height: 350px;
+    left: 100px;
+    bottom: -125px;
+    transform: rotate(45deg);
+}
+.tog:nth-child(2) {
+    height: 350px;
+    width: 220px;
+    left: 280px;
+    bottom: -160px;
+    transform: rotate(45deg);
+}
+.tog:nth-child(3) {
+    height: 400px;
+    width: 200px;
+    left: 540px;
+    bottom: -180px;
+    transform: rotate(-40deg);
+}
+.quyosh {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #EFB300;
+    z-index: 1;
+    position: absolute;
+    animation: quyosh 20s linear infinite;
+}
+.bulut {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.bulut img {
+    width: 110px;
+    height: 100px;
+    user-select: none;
+    position: absolute;
+}
+img.one {
+    animation: bulut1 5s linear infinite alternate;
+    left: 40px;
+}
+img.two {  
+    right: -100px;
+    width: 180px;
+    animation: bulut24 14s linear infinite alternate;
+}
+img.three {
+    left: -140px;
+    animation: bulut3 8s linear infinite alternate;
+}
+img.four {
+    width: 200px;
+    right: -40px;
+    animation: bulut24 10s linear infinite alternate;
+}
+.oy {
+    position: absolute;
+    font-size: 90px;
+    color: yellow;
+    animation: oy 20s linear infinite;
+    z-index: 1;
+}
+.yulduz span {
+    position: absolute;
+    z-index: 0;
+    animation: yulduz 20s linear infinite;
+}
+.yulduz .one {
+    left: 100px;
+    top: 40px;
+    color: yellow;
+}
+.yulduz .two {
+    color: red;
+    left: 150px;
+    top: 130px;
+}
+.yulduz .three {
+    right: 150px;
+    color: orange;
+    top: 130px;
+}
+.yulduz .four {
+    left: 500px;
+    top: 100px;
+    color: yellow;
+}
+.yulduz .five {
+    color: red;
+    left: 400px;
+    top: 20px;
+}
+.yulduz .six {
+    right: 250px;
+    color: orange;
+    top: 30px;
+}
+.yulduz .seven {
+    left: 280px;
+    top: 90px;
+    color: yellow;
+}
